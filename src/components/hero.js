@@ -32,17 +32,21 @@ const AppHero = () => {
   return (
     <section id="home" className="hero-block">
       <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+        {heroData.map((hero) => {
+          return (
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src={hero.image}
+                alt={"Slide " + hero.id}
+              />
+              <Carousel.Caption>
+                <h3>{hero.title}</h3>
+                <p>{hero.description}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          );
+        })}
       </Carousel>
     </section>
   );
