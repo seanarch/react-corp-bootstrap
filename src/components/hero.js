@@ -34,7 +34,7 @@ const AppHero = () => {
       <Carousel>
         {heroData.map((hero) => {
           return (
-            <Carousel.Item>
+            <Carousel.Item key={hero.id}>
               <img
                 className="d-block w-100"
                 src={hero.image}
@@ -43,6 +43,9 @@ const AppHero = () => {
               <Carousel.Caption>
                 <h3>{hero.title}</h3>
                 <p>{hero.description}</p>
+                <a href={hero.link} className="btn btn-primary">
+                  Learn More <i className="fas fa-chevron-right"></i>
+                </a>
               </Carousel.Caption>
             </Carousel.Item>
           );
