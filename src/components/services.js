@@ -59,7 +59,7 @@ const AppServices = () => {
         <Row>
           {servicesData.map((service) => {
             return (
-              <Col key={service.id} sm={4} className="title-holder">
+              <Col key={service.id} sm={4} className="holder">
                 <div className="icon">
                   <i className={service.icon}></i>{" "}
                 </div>
