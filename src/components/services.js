@@ -61,7 +61,6 @@ const AppServices = () => {
             return (
               <Col key={service.id} sm={4} className="title-holder">
                 <div className="icon">
-                  {" "}
                   <i className={service.icon}></i>{" "}
                 </div>
                 <h3>{service.title}</h3>
