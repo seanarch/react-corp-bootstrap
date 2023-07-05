@@ -57,7 +57,7 @@ const AppPricing = () => {
         <Row>
           {pricingData.map((price) => {
             return (
-              <Col sm={4}>
+              <Col sm={4} key={price.id}>
                 <div className="heading">
                   <h3>{price.plan}</h3>
                   <span className="price">{price.price}</span>
