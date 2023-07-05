@@ -53,7 +53,7 @@ const AppBlog = () => {
                       <time>{blog.time}</time>
                       <Card.Title>{blog.title}</Card.Title>
                       <Card.Text>{blog.description}</Card.Text>
-                      <a href="#" className="btn btn-primary">
+                      <a href={blog.link} className="btn btn-primary">
                         Read More <i className="fas fa-chevron-right"></i>
                       </a>
                     </Card.Body>
